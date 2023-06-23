@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "payfast1234",
+    "database": "paymentdb",
+    "host": "paymentdb.c3zymrc8cokz.us-east-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "payfast1234",
+    "database": "paymentdb",
+    "host": "paymentdb.c3zymrc8cokz.us-east-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "payfast1234",
+    "database": "paymentdb",
+    "host": "paymentdb.c3zymrc8cokz.us-east-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
