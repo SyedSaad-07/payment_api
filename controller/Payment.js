@@ -42,7 +42,12 @@ const Transaction = async (req, res) => {
 const TransactionDetail = async(req, res) => {
     const {CNIC, email} = req.query;
     try {
-        const data = await Payment.findAll({where:{
+        const data = await Payment.findAll({
+            order: [['id', 'ASC']],
+                    attributes:[
+                        [Sequelize.fn('to_char', Sequelize.col('DateTime'), 'YYYY-MM-DD'), 'dateTimeString'],
+                    ],
+            where:{
             [Op.and]: [{CNIC: CNIC}, {EmailAddress:email}]
         }
         })
